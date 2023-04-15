@@ -1,4 +1,4 @@
-- 👋 Hey, this is Prashant
+- 👋 Hey, this is Zekwov
 
 <!---
 nikolas-AI/nikolas-AI is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
