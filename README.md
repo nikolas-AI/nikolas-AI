@@ -23,7 +23,7 @@
   <a href="https://canva.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/900px-Canva_icon_2021.svg.png" alt="react" width="40" height="40"/> </a> 
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nikolas-ai&show_icons=true&locale=en&layout=compact" alt="nikolas-ai" /></p>
+<p><img align="left" height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=nikolas-ai&show_icons=true&locale=en&layout=compact" alt="nikolas-ai" /></p>
 
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nikolas-ai&" alt="nikolas-ai" /></p>
