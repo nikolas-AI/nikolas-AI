@@ -15,6 +15,5 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nikolas-ai&show_icons=true&locale=en&layout=compact" alt="nikolas-ai" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nikolas-ai&show_icons=true&locale=en" alt="nikolas-ai" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nikolas-ai&" alt="nikolas-ai" /></p>
