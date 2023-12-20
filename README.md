@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Zek</h1>
-<h3 align="center">A passionate AI enthusiast, Frontend developer, and Python developer.</h3>
+<h3 align="center">A passionate AI enthusiast.</h3>
+<h3 align="center">I'm learning Python and Frontend Development</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
