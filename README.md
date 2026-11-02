@@ -41,6 +41,16 @@ currently learning: how models train, generalize, and fail
 
 ---
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake.svg" />
+    <img width="98%" src="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake.svg" alt="Animated GitHub contributions snake" />
+  </picture>
+</div>
+
+---
+
 ## featured projects
 
 <table>
@@ -120,13 +130,6 @@ A runner game built with Pygame.
   <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=nikolas-AI&bg_color=0D1117&color=C9D1D9&line=67E8F9&point=A78BFA&area=true&hide_border=true" alt="Contribution graph" />
 </div>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake.svg" />
-    <img width="98%" src="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake.svg" alt="Animated GitHub contributions snake" />
-  </picture>
-</div>
 
 ---
 
