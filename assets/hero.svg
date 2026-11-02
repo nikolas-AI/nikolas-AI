@@ -1,0 +1,97 @@
+<svg width="1600" height="480" viewBox="0 0 1600 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="0.45" stop-color="#0D1228"/>
+      <stop offset="1" stop-color="#081120"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1270 95) rotate(119.164) scale(282.637 436.938)">
+      <stop stop-color="#7C3AED" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 410) rotate(-38.39) scale(365.772 249.781)">
+      <stop stop-color="#22D3EE" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="strokeA" x1="1080" y1="70" x2="1450" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="strokeB" x1="990" y1="320" x2="1400" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="blur40" x="-100" y="-100" width="1800" height="680" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="softGlow" x="0" y="0" width="1600" height="480" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" stroke="#9CA3AF" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="480" rx="28" fill="url(#bg)"/>
+  <rect width="1600" height="480" rx="28" fill="url(#grid)"/>
+
+  <g filter="url(#blur40)">
+    <ellipse cx="1270" cy="95" rx="220" ry="160" fill="url(#glowA)"/>
+    <ellipse cx="220" cy="410" rx="280" ry="150" fill="url(#glowB)"/>
+  </g>
+
+  <g opacity="0.16">
+    <path d="M0 350C156 332 224 296 358 260C504 221 621 245 758 230C918 212 985 123 1136 110C1271 98 1445 154 1600 123" stroke="#A5B4FC" stroke-width="2"/>
+    <path d="M0 393C169 355 304 341 431 302C553 264 672 252 814 271C965 291 1075 348 1220 336C1371 324 1483 268 1600 290" stroke="#22D3EE" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <path d="M1065 123L1168 88L1267 143L1289 252L1196 323L1084 295L1037 197L1065 123Z" stroke="url(#strokeA)" stroke-width="3" fill="#09101F" fill-opacity="0.62"/>
+    <path d="M1202 122L1320 79L1415 154L1386 277L1271 323L1174 255L1202 122Z" stroke="url(#strokeB)" stroke-width="3" fill="#0A1325" fill-opacity="0.55"/>
+    <path d="M986 204L1080 161L1178 212L1175 316L1077 363L988 309L986 204Z" stroke="url(#strokeB)" stroke-width="3" fill="#0A1325" fill-opacity="0.55"/>
+
+    <circle cx="1115" cy="133" r="7" fill="#67E8F9"/>
+    <circle cx="1189" cy="90" r="7" fill="#8B5CF6"/>
+    <circle cx="1261" cy="146" r="7" fill="#67E8F9"/>
+    <circle cx="1280" cy="251" r="7" fill="#8B5CF6"/>
+    <circle cx="1196" cy="321" r="7" fill="#67E8F9"/>
+    <circle cx="1089" cy="293" r="7" fill="#8B5CF6"/>
+    <circle cx="1040" cy="197" r="7" fill="#67E8F9"/>
+
+    <circle cx="1320" cy="79" r="7" fill="#67E8F9"/>
+    <circle cx="1414" cy="154" r="7" fill="#8B5CF6"/>
+    <circle cx="1386" cy="277" r="7" fill="#67E8F9"/>
+    <circle cx="1272" cy="323" r="7" fill="#8B5CF6"/>
+    <circle cx="1174" cy="255" r="7" fill="#67E8F9"/>
+
+    <circle cx="1080" cy="161" r="7" fill="#8B5CF6"/>
+    <circle cx="1178" cy="212" r="7" fill="#67E8F9"/>
+    <circle cx="1175" cy="316" r="7" fill="#8B5CF6"/>
+    <circle cx="1077" cy="363" r="7" fill="#67E8F9"/>
+    <circle cx="988" cy="309" r="7" fill="#8B5CF6"/>
+  </g>
+
+  <g>
+    <rect x="78" y="75" width="470" height="44" rx="12" fill="#0B1426" stroke="#23304B"/>
+    <circle cx="107" cy="97" r="6" fill="#F87171"/>
+    <circle cx="130" cy="97" r="6" fill="#FBBF24"/>
+    <circle cx="153" cy="97" r="6" fill="#4ADE80"/>
+    <text x="180" y="103" fill="#A5B4FC" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="17">/home/zek/profile</text>
+
+    <text x="80" y="185" fill="#E5E7EB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="78" font-weight="800">ZEK</text>
+    <text x="80" y="232" fill="#67E8F9" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="24">machine learning • research • software</text>
+
+    <text x="80" y="290" fill="#C7D2FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">Building useful things.</text>
+    <text x="80" y="328" fill="#C7D2FE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">Learning how and why they work.</text>
+
+    <rect x="80" y="372" width="184" height="48" rx="14" fill="#0B1426" stroke="#23304B"/>
+    <text x="108" y="402" fill="#67E8F9" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="18">CS @ TXST</text>
+
+    <rect x="282" y="372" width="250" height="48" rx="14" fill="#0B1426" stroke="#23304B"/>
+    <text x="311" y="402" fill="#A78BFA" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="18">exploring ML systems</text>
+  </g>
+</svg>
