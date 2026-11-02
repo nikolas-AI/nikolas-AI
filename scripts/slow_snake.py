@@ -1,42 +1,50 @@
-"""Slow Platane/snk SVG animations without desynchronizing snake and dots.
+"""Synchronously slow Platane/snk SVGs, with fail-closed validation.
 
-The snk SVG uses multiple synchronized CSS animations, including both the
-snake's travel and the removal of contribution squares. All CSS millisecond
-values in <style> must be scaled by the SAME factor.
-
-Usage: python scripts/slow_snake.py dist/*.svg
+The generator gives three animated CSS classes the same cycle duration:
+  .c = contribution cells   .u = collected tally   .s = snake segments
+Change ONLY the animation duration for all three, and reject unknown formats.
 """
-from pathlib import Path
 import re
 import sys
+from pathlib import Path
 
 SLOWDOWN = 2.5
 STYLE = re.compile(r"(<style\b[^>]*>)(.*?)(</style>)", re.I | re.S)
-TIME = re.compile(r"(?<![\w.-])(-?\d+(?:\.\d+)?)ms\b", re.I)
+# Match the *duration* in the animation shorthand of the three base classes.
+RULE = re.compile(r"(?P<begin>\.(?P<class>[cus])\s*\{(?:(?!\}).)*?\banimation\s*:\s*[^;{}]*?\b)(?P<time>\d+(?:\.\d+)?)(?P<unit>ms|s)\b", re.S | re.I)
 
 
 def slow_svg(svg: str) -> str:
-    count = 0
-    def edit_style(match: re.Match) -> str:
-        nonlocal count
-        def scale_time(t: re.Match) -> str:
-            nonlocal count
-            count += 1
-            number = float(t.group(1)) * SLOWDOWN
-            return f"{number:g}ms"
-        return match.group(1) + TIME.sub(scale_time, match.group(2)) + match.group(3)
-    modified = STYLE.sub(edit_style, svg)
-    if count < 2:
-        raise ValueError(f"Expected multiple CSS animation timings; found {count}. SVG format may have changed.")
-    return modified
+    if not STYLE.search(svg):
+        raise ValueError("SVG has no embedded CSS style; cannot apply safe slowdown")
+    styles = STYLE.findall(svg)
+    if len(styles) != 1:
+        raise ValueError("Expected exactly one SVG style block")
+    css = styles[0][1]
+    matches = list(RULE.finditer(css))
+    names = [m.group('class') for m in matches]
+    if sorted(names) != ['c', 's', 'u']:
+        raise ValueError(f"Expected one .c, .s, .u animation duration, got: {names}")
+    times_ms = [float(m.group('time')) * (1000 if m.group('unit') == 's' else 1) for m in matches]
+    if max(times_ms) - min(times_ms) > .01:
+        raise ValueError(f"Original CSS animations already out of sync: {times_ms}")
+
+    def scale(m):
+        value = float(m.group('time')) * SLOWDOWN
+        return m.group('begin') + f"{value:g}" + m.group('unit')
+
+    updated_css, count = RULE.subn(scale, css)
+    if count != 3:
+        raise ValueError(f"Changed {count} durations; need exactly 3")
+    return STYLE.sub(lambda m: m.group(1) + updated_css + m.group(3), svg, count=1)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if len(sys.argv) < 2:
-        raise SystemExit("Usage: python scripts/slow_snake.py dist/*.svg")
-    for filename in sys.argv[1:]:
-        path = Path(filename)
-        original = path.read_text(encoding="utf-8")
-        updated = slow_svg(original)
-        path.write_text(updated, encoding="utf-8")
-        print(f"{filename}: all CSS animation timings scaled {SLOWDOWN}x")
+        sys.exit('Usage: python scripts/slow_snake.py dist/*.svg')
+    for arg in sys.argv[1:]:
+        p = Path(arg)
+        original = p.read_text(encoding='utf-8')
+        modified = slow_svg(original)
+        p.write_text(modified, encoding='utf-8')
+        print(f'{p}: snake, cells and tally synchronized at {SLOWDOWN}x slowdown')
