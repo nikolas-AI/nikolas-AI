@@ -17,7 +17,7 @@
 
 ## about me
 
-I’m **Zek**
+I’m **Zek** 
 
 Right now I’m most interested in the intersection of:
 - **machine learning**
@@ -39,77 +39,54 @@ focus: machine learning, frontend, product-minded software
 currently learning: how models train, generalize, and fail
 ```
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### currently into
-- machine learning experiments
-- interactive web projects
-- neural networks + optimization
-
-</td>
-<td width="50%" valign="top">
-
-### currently working on
-- exploring research ideas around ML
-- building cleaner frontend projects
-- turning ideas into real demos
-
-</td>
-</tr>
-</table>
-
 ---
 
 ## featured projects
 
-<div align="center">
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### [🌐 Portfolio](https://github.com/nikolas-AI/Portfolio)
-My personal portfolio site — a home base for my work, links, and design experiments.
+### [Zorads / AImigos](https://github.com/nikolas-AI/Zorads-HckTx)
+Group chat with AI companions. A HackTX project built around bringing people and AI into one conversation.
 
 </td>
 <td width="50%" valign="top">
 
-### [ Galactic Mayhem](https://github.com/nikolas-AI/Galactic_Mayhem)
-A Python game project with fast-paced arcade energy and a more playful side of my coding.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [ Forrest Gump](https://github.com/nikolas-AI/Forrest_Gump)
-A simple runner game built with Pygame — small, fun, and a great practice ground for game logic.
-
-</td>
-<td width="50%" valign="top">
-
-### [ To-do List](https://github.com/nikolas-AI/To-do-List)
-A practical frontend project focused on UI structure, interaction, and getting the basics right.
+### [CIMT](https://github.com/nikolas-AI/CIMT)
+A web tool for estimating a clinic's community impact using volunteer hours and services delivered.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### [ Product Page](https://github.com/nikolas-AI/Product-page)
-A product-page build where I experimented with layout, styling, and frontend presentation.
+### [Normalized Gradient Descent](https://github.com/nikolas-AI/Normalized-GD)
+Experiments with NGD and stochastic NGD for two-layer neural networks, including research-paper figure reproduction.
 
 </td>
 <td width="50%" valign="top">
 
-### [ TypeItUp](https://github.com/nikolas-AI/TypeItUp)
-A typing-related interface project that helped me practice cleaner UI and interaction design.
+### [UI4ANOT](https://github.com/nikolas-AI/UI4ANOT)
+A desktop annotation assistant for perceptual quality assessment of distorted 3D point clouds.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Galactic Mayhem](https://github.com/nikolas-AI/Galactic_Mayhem)
+A Python arcade game — because sometimes building something fun is the entire point.
+
+</td>
+<td width="50%" valign="top">
+
+### [Forrest Gump](https://github.com/nikolas-AI/Forrest_Gump)
+A runner game built with Pygame.
 
 </td>
 </tr>
 </table>
-</div>
 
 ---
 
@@ -144,7 +121,11 @@ A typing-related interface project that helped me practice cleaner UI and intera
 </div>
 
 <div align="center">
-  <img width="98%" src="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake.svg" />
+    <img width="98%" src="https://raw.githubusercontent.com/nikolas-AI/nikolas-AI/output/github-contribution-grid-snake.svg" alt="Animated GitHub contributions snake" />
+  </picture>
 </div>
 
 ---
