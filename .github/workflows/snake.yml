@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - ".github/workflows/snake.yml"
+      - "scripts/slow_snake.py"
 
 permissions:
   contents: write
@@ -18,13 +19,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate snake SVGs
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate violet/cyan snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: nikolas-AI
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=#7C3AED&color_dots=#F3F4F6,#DDD6FE,#C4B5FD,#A78BFA,#7C3AED
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#67E8F9&color_dots=#0D1117,#312E81,#5B21B6,#8B5CF6,#C4B5FD
+
+      - name: Slow down the snake movement (2.5x)
+        run: python scripts/slow_snake.py dist/github-contribution-grid-snake.svg dist/github-contribution-grid-snake-dark.svg
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
