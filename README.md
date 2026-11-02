@@ -17,7 +17,7 @@
 
 ## about me
 
-I’m **Zek** — a CS student at **Texas State University** who likes building things, breaking them, and understanding why they work.
+I’m **Zek** 
 
 Right now I’m most interested in the intersection of:
 - **machine learning**
@@ -25,7 +25,6 @@ Right now I’m most interested in the intersection of:
 - **research-driven software**
 - **clean product design**
 
-I’m not trying to make my GitHub look like a buzzword graveyard. I’m here to **learn in public, build solid projects, and get sharper with every repo**.
 
 ---
 
@@ -39,29 +38,6 @@ location: Texas, USA
 focus: machine learning, frontend, product-minded software
 currently learning: how models train, generalize, and fail
 ```
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### currently into
-- machine learning experiments
-- interactive web projects
-- neural networks + optimization
-- interfaces that feel good to use
-
-</td>
-<td width="50%" valign="top">
-
-### currently working on
-- improving my GitHub and portfolio
-- exploring research ideas around ML
-- building cleaner frontend projects
-- turning ideas into real demos
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -154,13 +130,6 @@ A runner game built with Pygame.
 
 ---
 
-## a little more me
-
-```text
-I like projects that teach me something.
-If I build it, I want to understand it.
-If I don’t understand it, I keep going.
-```
 
 <div align="center">
 
