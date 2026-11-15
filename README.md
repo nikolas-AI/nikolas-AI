@@ -119,16 +119,18 @@ A runner game built with Pygame.
 
 ---
 
+
 ## github pulse
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=nikolas-AI&show_icons=true&hide_border=true&rank_icon=github&bg_color=0D1117&title_color=67E8F9&icon_color=A78BFA&text_color=C9D1D9" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikolas-AI&layout=compact&hide_border=true&bg_color=0D1117&title_color=67E8F9&text_color=C9D1D9" alt="Top languages" />
+  <img height="165" src="./assets/github-stats.svg" alt="GitHub stats" />
+  <img height="165" src="./assets/top-langs.svg" alt="Top languages" />
 </div>
 
 <div align="center">
   <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=nikolas-AI&bg_color=0D1117&color=C9D1D9&line=67E8F9&point=A78BFA&area=true&hide_border=true" alt="Contribution graph" />
 </div>
+
 
 
 ---
