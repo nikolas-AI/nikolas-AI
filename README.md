@@ -146,5 +146,5 @@ A runner game built with Pygame.
 
 <br/><br/>
 
-<sub>Thanks for stopping by.</sub>
+<sub>Thank you for stopping by.</sub>
 </div>
